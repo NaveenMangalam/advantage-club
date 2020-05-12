@@ -1,0 +1,26 @@
+<section class="listing-section">
+    <div class="listing-container">
+        <ul>
+            <li class="list-item" *ngFor="let item of listitems">
+                <div class="listing-top_section">
+                    <img src="{{item.image}}">
+                    <div>
+                        <p class="product-name">{{item.productName}}</p>
+                        <span>{{item.rating}}</span>
+                    </div>
+                    <p class="product-name">{{item.productDesc}}</p>
+                </div>
+                <div class="listing-bottom_section">
+                    <div class="button save-cart">
+                        <a>{{item.save}}</a>
+                    </div>
+                    <div class="button buy-now">
+                        <a  href="{{item.image}}" target="_blank">{{item.buynow}}</a>
+
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</section>
